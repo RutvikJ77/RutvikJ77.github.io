@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c71ef55.css",
+    "main.js": "/static/js/main.fe50b3f4.js",
+    "static/media/cover-three.png": "/static/media/cover-three.2aa78a24beee82d17612.png",
+    "static/media/cover-two.png": "/static/media/cover-two.0bfeecc9457f7170e6d8.png",
+    "static/media/cover-one.png": "/static/media/cover-one.02b22577b63fac3dd3ea.png",
+    "static/media/Satoshi-Medium.ttf": "/static/media/Satoshi-Medium.759562088ba19068aef8.ttf",
+    "static/media/Satoshi-Regular.ttf": "/static/media/Satoshi-Regular.fe762acc7e97cb612805.ttf",
+    "static/media/Satoshi-Bold.ttf": "/static/media/Satoshi-Bold.137a52d9f47dd71c6247.ttf",
+    "index.html": "/index.html",
+    "main.1c71ef55.css.map": "/static/css/main.1c71ef55.css.map",
+    "main.fe50b3f4.js.map": "/static/js/main.fe50b3f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c71ef55.css",
+    "static/js/main.fe50b3f4.js"
+  ]
+}
