@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+@layer base {
+  :root {
+
+    --background-color: white;
+
+  }
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto
@@ -88,6 +98,16 @@
   font-family: Satoshi-Regular,sans-serif
 }
 
+.text-3xl {
+  font-size: 3rem;
+  line-height: 2rem
+}
+
+.text-2halfxl {
+  font-size: 2rem;
+  line-height: 2rem
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem
@@ -124,6 +144,11 @@
   color: rgb(254 240 138/var(--tw-text-opacity))
 }
 
+.text-white-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 229 207/var(--tw-text-opacity))
+}
+
 .text-stone-700 {
   --tw-text-opacity: 1;
   color: rgb(68 64 60/var(--tw-text-opacity))
@@ -138,14 +163,61 @@
 }
 
 .transition-all {
-  transition-duration: .15s;
+  /* transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease-in-out; */
+  transition-duration: .3s;
   transition-property: all;
   transition-timing-function: cubic-bezier(.4,0,.2,1)
 }
 
-a.email:hover {
-color: rgb(255 255 255)
+/* a.email:hover {
+background-color: rgb(254,240,138)
+} */
+
+a.email {
+  position: relative;
+  text-decoration: none;
 }
+
+a.email::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(254, 240, 138);
+  transition: width 0.1s ease-in-out;
+  z-index: -1;
+}
+
+a.email:hover::before {
+  width: 100%;
+}
+
+a.title {
+  position: relative;
+  text-decoration: none;
+}
+
+a.title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(254, 240, 138);
+  transition: width 0.1s ease-in-out;
+  z-index: -1;
+}
+
+a.title:hover::before {
+  width: 100%;
+}
+
+
 
 @font-face {
   font-family: "Satoshi-Medium";
@@ -160,14 +232,35 @@ color: rgb(255 255 255)
   src: url("../fonts/Satoshi/Satoshi-Regular.ttf");
 }
 
+.font-professional {
+  font-family: 'Satoshi', sans-serif;
+  color: black;
+}
+
+.font-creative {
+  font-family: 'Instrument Serif', serif;
+}
+
+.font-instrument-serif {
+  font-family: 'Instrument Serif';
+  letter-spacing: .07em;
+  font-size: medium;
+  font-style: italic;
+
+}
+
+.font-instrument-serifb {
+  font-family: 'Instrument Serif';
+}
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  background-color: var(--background-color);
   color: #e5e5cf;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  margin: 0
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 code {
@@ -178,6 +271,15 @@ code {
   font-size: .75rem;
   line-height: 1rem
 }
+
+.theme-professional {
+  --background-color: white;
+}
+
+.theme-creative {
+  --background-color: black;
+}
+
 
 @media (min-width: 768px) {
   .md\:mt-20 {
@@ -208,3 +310,9 @@ code {
   }
 }
 
+@media (max-width: 768px) {
+  a.title::before {
+    width: 100%; /* Keep the background visible */
+    transition: none; /* Disable transition for instant effect */
+  }
+}

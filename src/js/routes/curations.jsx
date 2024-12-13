@@ -1,7 +1,7 @@
 import React from "react";
 
-const curations = () => {
+const Curations = () => {
   return <div>curations</div>;
 };
 
-export default curations;
+export default Curations;
