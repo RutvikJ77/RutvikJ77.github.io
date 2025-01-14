@@ -196,12 +196,12 @@ a.email:hover::before {
   width: 100%;
 }
 
-a.title {
+a.title,.highlight {
   position: relative;
   text-decoration: none;
 }
 
-a.title::before {
+a.title::before,.highlight::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -213,7 +213,7 @@ a.title::before {
   z-index: -1;
 }
 
-a.title:hover::before {
+a.title:hover::before,.highlight:hover::before {  
   width: 100%;
 }
 
@@ -311,7 +311,7 @@ code {
 }
 
 @media (max-width: 768px) {
-  a.title::before {
+  a.title::before,.highlight::before {
     width: 100%; /* Keep the background visible */
     transition: none; /* Disable transition for instant effect */
   }

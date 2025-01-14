@@ -5,7 +5,7 @@ function Professional( {menu} ) {
   <>
   <div className="text-base font-satoshim w-5/10 min-h-[150px] ">
             {menu === 0 &&
-              (<>Hello, I'm Rutvik. 
+              (<>Hello, <empty className="highlight">I'm Rutvik</empty>. 
               <br /><br />I seek to create experiences in every possible way. Currently doing it with data, design and a blend of analytics.</>)}
 
             {menu === 0 && (
@@ -16,14 +16,17 @@ function Professional( {menu} ) {
                 <div className="border-b-2 border-yellow-200 pb-2 ">
                   <a href="https://linkedin.com/in/rutvikjoshi">LinkedIn</a>
                 </div>
+                <div className="border-b-2 border-yellow-200 pb-2">
+                  <a href="https://rutvik-j.github.io/resume">Résume</a>
+                </div>
               </div>
             )}
             {menu === 1 && 
             (<> 
             
-            <quote> | Driving Efficiency Through Data </quote> <br /><br />
+            <quote class="highlight"> | Driving Efficiency Through Data </quote> <br /><br />
             
-            With a focus on community and stakeholder engagement, I leverage analysis with visual storytelling to drive informed decision-making and create win-win outcomes. 
+            With 3+ years focus on community and stakeholder engagement, I leverage analysis with visual storytelling to drive informed decision-making and create win-win outcomes. 
             My deep interests in blockchain, data and research fuels my vision to enhance transparency and create seamless experiences while embodying my core values of innovation, collaboration, and empowerment.<br /><br />
             
             
@@ -41,9 +44,6 @@ function Professional( {menu} ) {
             </>)}
             {menu === 1 && (
               <div className="flex flex-row gap-4 font-satoshib text-xs mt-10">
-                <div className="border-b-2 border-yellow-200 pb-2">
-                  <a href="https://rutvik-j.github.io/resume">Résume</a>
-                </div>
                 <div className="border-b-2 border-yellow-200 pb-2 ">
                   <a href="https://github.com/RutvikJ77">GitHub</a>
                 </div>
