@@ -92,7 +92,7 @@ function Header() {
           {isChanged ? <Professional menu={menu}/> : <Creative menu={menu}/>}
           </div>
           <div className="text-stone-700 font-satoshir">
-            Get in touch at <a className="email" href="mailto:rutvikj77@outlook.com">rutvikj77@outlook.com</a> or any socials.
+            Get in touch at <a className="email" href="mailto:rutvikjoshi.tech@gmail.com">rutvikjoshi.tech@gmail.com</a> or any socials.
           </div>
         </div>
       </div>

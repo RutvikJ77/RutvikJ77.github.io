@@ -24,10 +24,10 @@ function Professional( {menu} ) {
             {menu === 1 && 
             (<> 
             
-            <quote class="highlight"> | Driving Efficiency Through Data </quote> <br /><br />
+            <quote class="highlight"> | Empowering Decisions Through Data & Innovation </quote> <br /><br />
             
-            With 3+ years focus on community and stakeholder engagement, I leverage analysis with visual storytelling to drive informed decision-making and create win-win outcomes. 
-            My deep interests in blockchain, data and research fuels my vision to enhance transparency and create seamless experiences while embodying my core values of innovation, collaboration, and empowerment.<br /><br />
+            With 3+ years focus on business intelligence, stakeholder alignment, and community engagement, I harness data analysis and visual storytelling to guide strategic decisions and deliver impactful, win-win solutions. <br />
+            My vision is to drive transparency, optimize operations, and build seamless, future-ready experiences—rooted in innovation, collaboration, and empowerment.<br /><br />
             
             
             
@@ -47,9 +47,9 @@ function Professional( {menu} ) {
                 <div className="border-b-2 border-yellow-200 pb-2 ">
                   <a href="https://github.com/RutvikJ77">GitHub</a>
                 </div>
-                <div className="border-b-2 border-yellow-200 pb-2 ">
+                {/* <div className="border-b-2 border-yellow-200 pb-2 ">
                   <a href="https://www.kaggle.com/rutvikj77">Kaggle</a>
-                </div>
+                </div> */}
                 <div className="border-b-2 border-yellow-200 pb-2 ">
                   <a href="https://public.tableau.com/app/profile/rutvik.joshi07">Data Stories</a>
                 </div>
