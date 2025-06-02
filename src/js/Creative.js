@@ -19,13 +19,13 @@ function Creative( {menu} ) {
             <quote> | <i>a deep generalist </i></quote> <br /><br />
             
             outright experimenting.</>)}
-            {/* {menu === 1 && (
+            {menu === 1 && (
               <div className="flex flex-row gap-4 font-satoshib text-xs mt-10">
                 <div className="border-b-2 border-yellow-200 pb-2">
-                  <a href="https://rutvik-j.github.io/resume">résume</a>
+                  <a href="https://hueharmony.ca">HueHarmony Clothing Inc.</a>
                 </div>
               </div>
-            )} */}
+            )}
             {menu === 2 &&
               <>i write... sometimes
 
