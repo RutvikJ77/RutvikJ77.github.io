@@ -12,9 +12,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Header/>} />
+      <Route path="/" element={<Header />} />
       <Route path="work" element={<Work />} />
       <Route path="curations" element={<Curations />} />
+      {/* Catch-all route for 404 */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>
